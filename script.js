@@ -7,6 +7,13 @@ for(let i of btns){
 }
 
 
+function disable(x){
+    x.disabled=true;
+}
+
+
+
+let spans=document.querySelectorAll("span");
 function roll(event){
     console.log("rolling");
     let turn=event.target.id;
@@ -15,7 +22,6 @@ function roll(event){
     // console.log(rand);
 
 
-    let spans=document.querySelectorAll("span");
     for(let i=1;i<spans.length;i++){
         if(turn.toLowerCase()==(spans[i].id).toLowerCase()){
             // console.log((spans[i].id).toLowerCase());
